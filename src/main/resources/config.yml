@@ -1,0 +1,55 @@
+# EnoBoard Configuration
+# Animasyonlu Scoreboard Plugin
+
+# Web panel portu
+web-port: 3131
+
+# Web Panel Admin Girişi
+web-panel:
+  username: "admin"
+  password: "admin123"
+
+# Scoreboard ayarları
+scoreboard:
+  # Scoreboard aktif mi?
+  enabled: true
+
+  # Güncelleme aralığı (tick cinsinden, 20 tick = 1 saniye)
+  update-interval: 5
+
+  # Başlık animasyon frameleri
+  # Her satır bir frame olarak gösterilir
+  title-frames:
+    - "&6&l✦ &e&lEnoBoard &6&l✦"
+    - "&e&l✦ &6&lEnoBoard &e&l✦"
+    - "&6&l✦ &e&lE&6&lnoBoard &6&l✦"
+    - "&6&l✦ &e&lEn&6&loBoard &6&l✦"
+    - "&6&l✦ &e&lEno&6&lBoard &6&l✦"
+    - "&6&l✦ &e&lEnoB&6&loard &6&l✦"
+    - "&6&l✦ &e&lEnoBo&6&lard &6&l✦"
+    - "&6&l✦ &e&lEnoBoa&6&lrd &6&l✦"
+    - "&6&l✦ &e&lEnoBoar&6&ld &6&l✦"
+    - "&6&l✦ &e&lEnoBoard &6&l✦"
+
+  # Scoreboard satırları
+  # Kullanılabilir placeholderlar:
+  # %player% - Oyuncu adı
+  # %online% - Online oyuncu sayısı
+  # %max% - Maksimum oyuncu sayısı
+  # %world% - Oyuncunun bulunduğu dünya
+  # %health% - Oyuncu canı
+  # %food% - Oyuncu açlık seviyesi
+  # %level% - Oyuncu seviyesi
+  # %x%, %y%, %z% - Oyuncu koordinatları
+  lines:
+    - "&7&m----------------"
+    - "&f"
+    - "&e⭐ &fHoşgeldin, &a%player%"
+    - "&f"
+    - "&e👥 &fOnline: &a%online%&7/&a%max%"
+    - "&e🌍 &fDünya: &b%world%"
+    - "&f"
+    - "&e❤ &fCan: &c%health%"
+    - "&e🍖 &fAçlık: &6%food%"
+    - "&f"
+    - "&7&m----------------"

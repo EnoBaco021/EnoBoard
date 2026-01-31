@@ -1,0 +1,19 @@
+name: EnoBoard
+version: 1.0.0
+main: org.example.enoboard.EnoBoard
+api-version: 1.20
+author: EnoBoard
+description: Animasyonlu Scoreboard Plugin with Web Panel
+
+commands:
+  enoboard:
+    description: EnoBoard ana komutu
+    usage: /enoboard <reload|toggle|web>
+    permission: enoboard.admin
+    aliases: [eb, scoreboard]
+
+permissions:
+  enoboard.admin:
+    description: EnoBoard yönetim izni
+    default: op
+
